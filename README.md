@@ -42,9 +42,11 @@ angular.module('app.controllers.mycontroller', [
       var updatedSelectionCache = selectionCacheService.add(vm.selectionCacheHandler, selectedItem);
 
       if (angular.isUndefined(updatedSelectionCache)) {
-        // selectionCacheService.add returns 'undefined' if the selectedItem was already cached.
-        // Given our sample method is **toggle**Selected, this means that we want to deselect that item.
-        // selectionCacheService.remove(vm.selectionCacheHandler, selectedItem);
+        // selectionCacheService.add returns 'undefined' if the selectedItem
+        // was already cached.
+        // Given our sample method is **toggle**Selected, this means that we
+        // want to deselect that item.
+        selectionCacheService.remove(vm.selectionCacheHandler, selectedItem);
       }
 
       // delegate the actual use of the selection cache to someone else
