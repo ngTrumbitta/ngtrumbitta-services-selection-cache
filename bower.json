@@ -1,0 +1,27 @@
+{
+  "name": "ngtrumbitta-services-selection-cache",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ngTrumbitta/ngtrumbitta-services-selection-cache",
+  "authors": [
+    "William Ghelfi <trumbitta@gmail.com>"
+  ],
+  "description": "Selection Cache service",
+  "main": "src/selection-cache.service.js",
+  "keywords": [
+    "Angular",
+    "Service",
+    "Selection",
+    "Cache"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}
